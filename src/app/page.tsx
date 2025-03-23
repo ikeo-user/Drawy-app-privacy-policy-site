@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import appLogo from "../../public/wsa-app-logo.png";
+import appLogo from "../../public/file.svg";
 import googlePlayLogo from "../../public/google-play.png";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.page_title_h2}>
-            <h2>Privacy Policy for Wifi Signal Analyzer App</h2>
+            <h2>Privacy Policy for Drawy: Drawing app for kids</h2>
         </div>
         <div className={styles.logo_container}>
 
@@ -24,10 +24,7 @@ export default function Home() {
         <div className={styles.privacy_intro_text}>
           <p>
           
-          WiFi Signal Analyzer ("the App") is a tool designed to scan for nearby Wi-Fi 
-          access points, measure their signal strength (in dBm), and present a graphical 
-          comparison of available networks. This Privacy Policy explains how we collect, 
-          use, and share your information when you use the App.
+          Drawy: Drawing app for kids ("the App") is a drawing app etc.....
           </p>
 
         </div>

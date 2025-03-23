@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Wifi Signal Analyzer privacy policy",
+  title: "Drawy privacy policy",
   description: "privacy policy for our mobile app",
 };
 
