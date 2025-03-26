@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import appLogo from "../../public/file.svg";
+import appLogo from "../../public/drawy_logo.png";
 import googlePlayLogo from "../../public/google-play.png";
 
 export default function Home() {
@@ -20,11 +20,12 @@ export default function Home() {
           width={120}
           height={120}
         />
-        <h5 >Update date: 23 March 2025</h5>
+        <h5 >Update date: 26 March 2025</h5>
         <div className={styles.privacy_intro_text}>
           <p>
           
-          Drawy: Drawing app for kids ("the App") is a drawing app etc.....
+          <strong>Drawy: Drawing App for Kids</strong> ("the App") is a fun and interactive drawing application designed for children.
+           This Privacy Policy explains how we collect, use, and protect your data while using the App.
           </p>
 
         </div>
@@ -36,17 +37,19 @@ export default function Home() {
     <div className={styles.policy_container_div}>
       <h2>1. Information We Collect</h2>
       <div className={styles.policy_element}>
-        <p>The App collects and processes the following data:</p>
+        <p>The App itself does not collect or store personal data. However, third-party services integrated into the App may
+           collect limited information, as detailed below: </p>
         <br />
         <div className={styles.policy_elem_embaded}>
-          <p>Our app may collect limited data automatically for functionality and analytics, including:</p>
           <ul>
-              <li><strong>Device or other IDs:</strong> Used for analytics and advertising through AdMob.</li>
-              <li><strong>Location Data:</strong> Required to scan and display nearby Wi-Fi access points (per Android OS policy).</li>
-              <li><strong>Network Information:</strong> Used to analyze Wi-Fi signal strength and performance.</li>
+              <li><strong>AdMob (Google Ad Services):</strong> Used to display child-appropriate advertisements. AdMob may collect device-specific identifiers for ad personalization control.</li>
+              <li><strong>Firebase Analytics:</strong> Used to analyze app performance and improve user experience. Firebase collects device identifiers, app usage data, and crash reports.</li>
+              
           </ul>
-          </div>
         </div>
+        <br />
+        <p>All data collected by these services complies with Google Play’s Families Policy and is handled per their respective privacy policies.</p>
+      </div>
     
       
     </div>
@@ -54,22 +57,21 @@ export default function Home() {
     <div className={styles.policy_container_div}>
     <h2>2. Permissions Used and Their Purpose</h2>
     <div className={styles.policy_elem_embaded}>
-      <p>The App requires the following permissions for proper functionality:</p>
+      <p>To provide core functionality, the App requests the following permissions:</p>
       <br />
       <ul>
-          <li><strong>ACCESS_COARSE_LOCATION:</strong> Used to detect and display available Wi-Fi networks.</li>
-          <li><strong>ACCESS_FINE_LOCATION:</strong> Required for accurate scanning of nearby Wi-Fi access points.</li>
-          <li><strong>ACCESS_NETWORK_STATE:</strong> Used to check the status of the device’s network connection.</li>
-          <li><strong>ACCESS_WIFI_STATE:</strong> Required to obtain information about Wi-Fi connections.</li>
+          <li><strong>INTERNET:</strong> Required for displaying ads and analytics.</li>
+          <li><strong>ACCESS_NETWORK_STATE:</strong> Checks if the device is connected to the internet.</li>
+          <li><strong>FOREGROUND_SERVICE:</strong> Ensures smooth background processing while in use.</li>
+          <li><strong>WAKE_LOCK:</strong> Prevents the device from sleeping while using the app.</li>
+         
+          <li><strong>READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE:</strong> Allows users to save and load their drawings.</li>
 
-          <li><strong>CHANGE_WIFI_STATE:</strong> Used to initiate Wi-Fi scans.</li>
-          <li><strong>FOREGROUND_SERVICE:</strong> Ensures continuous operation while the app is in use.</li>
-          <li><strong>INTERNET:</strong> Necessary for ads and analytics through AdMob.</li>
-          <li><strong>NEARBY_WIFI_DEVICES:</strong> Required for scanning and detecting nearby Wi-Fi devices on Android 13 and above.</li>
-          <li><strong>SCHEDULE_EXACT_ALARM:</strong> Used for scheduled scanning features.</li>
-          <li><strong>WAKE_LOCK:</strong>Prevents the device from sleeping during operations.</li>
-          <li><strong>CHECK_LICENSE:</strong>Verifies the legitimacy of the app download.</li>
-          <li><strong>AD_ID:</strong>  Used for AdMob advertising purposes.</li>
+          <li><strong>POST_NOTIFICATIONS:</strong> Required to send notifications related to app usage.</li>
+          <li><strong>CHECK_LICENSE:</strong> Verifies app legitimacy.</li>
+          <li><strong>AD_ID:</strong> Used for AdMob to serve appropriate child-friendly ads.</li>
+
+         
       </ul>
     </div>
 
@@ -77,30 +79,34 @@ export default function Home() {
     
     <div className={styles.policy_container_div}>
       <h2>3. How We Use Your Information</h2>
-      <br />
-      <p>We use the collected data to:</p>
+      
       <div className={styles.policy_elem_embaded}>
+        <p>The limited data collected by third-party services is used to:</p>
+        <br />
         <ul>
-            <li><p>Provide core functionality, such as scanning and displaying Wi-Fi signal strength.</p></li>
-            <li><p>Improve app performance and user experience.</p></li>
+            <li><p>Serve <strong>appropriate ads for children</strong> in compliance with Google’s Families Policy.</p></li>
+            <li><p>Improve app performance through analytics.</p></li>
             <li><p>Display advertisements through AdMob.</p></li>
-            <li><p>Ensure compliance with Android and Google Play policies.</p></li>
-        </ul>
-      </div>
 
+        </ul> <br />
+        <p>The App does not collect personally identifiable information or share user data.</p>
+
+      </div>
     </div>
     
     <div className={styles.policy_container_div}>
       <h2>4. Data Sharing and Third-Party Services</h2>
       <div className={styles.policy_elem_embaded}>
-        <p>We do not sell your personal data. However, the App integrates with third-party services, including:</p>
+        <p>We do not sell, share, or store user data. However, the App integrates with the following third-party services:</p>
         <br />
         <ul>
-            <li><strong>Google AdMob:</strong> To display ads, AdMob may collect and use device identifiers and advertising data. 
-            Please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for more details.</li>
+            <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank">Google AdMob Privacy Policy</a>.</li>
+            <li><strong>Firebase Analytics:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</li>
         </ul>
-      
+        <br />
+        <p>These services may collect device identifiers to function properly.</p>
       </div>
+      
 
     </div>
     
@@ -118,35 +124,40 @@ export default function Home() {
        
     <div className={styles.policy_container_div}>
       <h2>6. Data Safety (Google Play Disclosure)</h2>
+      <br />
       <div className={styles.policy_elem_embaded}>
         <ul>
-          <li><strong>Data collected:</strong> Device or other IDs, Location Data, Network Information.</li>
-          <li><strong>Data shared:</strong> Device or other IDs (for AdMob advertising purposes).</li>
+          <li><strong>Data collected:</strong> Device or other IDs, App interactions, Crash logs.</li>
+          <li><strong>Data shared:</strong> Device or other IDs (for AdMob advertising purposes), App interactions (for analytics).</li>
           <li><strong>Security practices:</strong> Data is encrypted in transit, and we do not store user data beyond what is required for the App’s functionality.</li>        
-          <li><strong>Data retention:</strong> All collected data is ephemeral and only used during the active session of the App.</li>
+          <li><strong>Data retention:</strong> Data is used only for analytics and ad-serving and is not stored beyond what is necessary.</li>
         </ul>
+        <br />
+        <p>The App complies with <strong>Google Play’s Families Policy</strong> and ensures that all ads shown are child-appropriate.</p>
 
       </div>
     </div>
     
-    <div className={styles.policy_container_div}>
-      <h2>7. User Choices and Controls</h2>
-      <div className={styles.policy_elem_embaded}>
-        <ul>
-          <li>You can disable location permissions through your device settings, but this will limit the App’s functionality.</li>
-           <li> You can opt out of personalized ads via Google’s settings: <a href="https://adssettings.google.com/" target="_blank">Google Ads Settings</a></li>
-        </ul>
-      </div>
+    
 
+    <div className={styles.policy_container_div}>
+      <h2>7. Children's Privacy</h2>
+      <div className={styles.policy_elem_embaded}>
+        <p>The App is designed for children and strictly follows <strong>Google Play’s Families Policy</strong>. 
+        <br />We do not knowingly collect, store, or share personal information from children.</p>
+      </div>
+      
     </div>
 
     <div className={styles.policy_container_div}>
-      <h2>8. Children's Privacy</h2>
+      <h2>8. User Choices and Controls</h2>
       <div className={styles.policy_elem_embaded}>
-        <p>The App is not intended for children under 13. We do not knowingly collect data from children</p>
-        
+        <ul>
+          <li>You can manage ad settings through: <a href="https://adssettings.google.com/" target="_blank">Google Ads Settings</a>.</li>
+          <li>You can manage app permissions via your device settings</li>
+        </ul>
       </div>
-      
+
     </div>
     
     <div className={styles.policy_container_div}>
@@ -156,7 +167,7 @@ export default function Home() {
 
         <div className={styles.policy_elem_embaded}>
           <div className={styles.changes_text}>
-            Date: 23 March 2025: (this) initial Version of the apps privacy policy.
+            Date: 26 March 2025: (This) the initial Version of the app's privacy policy.
           </div>
          
 
@@ -168,10 +179,9 @@ export default function Home() {
     
     
     <div className={styles.policy_container_div}>
-      <h2>11. Contact Us</h2>
+      <h2>10. Contact Us</h2>
       <div className={styles.policy_elem_embaded}>
-        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-        <p>📧 Email: ikeolandramo@gmail.com</p>
+        <p>If you have any questions, please contact us at: [ikeolandramo@gmail.com]</p>
       </div>
       
     </div>
@@ -190,7 +200,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://play.google.com/store/apps/details?id=com.ikeo.wifisignalanalyzer"
+          href="https://play.google.com/store/apps/details?id=com.ikeo.drawyforkids"
           target="_blank"
           rel="noopener noreferrer"
         >
